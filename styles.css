@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    margin: auto;
+    width: 50%;
+    height: 60vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "display display display display"
+        "clear  clear   back    divide"
+        "seven  eight   nine    multiply"
+        "four   five    six     minus"
+        "one    two     three   plus"
+        "zero   zero    zero    equal";
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(194, 126, 0);
+}
+
+.btn:active {
+    background-color: rgb(136, 88, 0);
+}
+
+.no {
+    background-color: azure;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.no:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.no:active {
+    background-color: rgb(138, 138, 138);
+}
+
+.display {
+    grid-area: display;
+    background-color: black;
+    color: white;
+    text-align: end;
+    font-size: 3em;
+    margin: 0px;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.backspace {
+    grid-area: back;
+}
+.divide {
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equal {
+    grid-area: equal;
+}
